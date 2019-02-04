@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>| LIMO PARTY</title>
+
+    <link rel="shortcut icon" href="icons/thumbnailrosa.png" type="image/png">
+    <link rel="icon" href="icons/thumbnailrosa.png" type="image/png">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="stylesheet " href="css/chocolat.css " type="text/css" media="all" />
+
+    <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+
+    <link href="css/style2.css" rel='stylesheet' type='text/css' media="all">
+
+    <style type="text/css">
+    .icon {
+        background: url('images/hive.png') 0 0 no-repeat;
+        width: 76px;
+        height: 76px;
+        top: -200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .icon:hover {
+        -moz-animation: rotatecircle 4s infinite linear;
+        -webkit-animation: rotatecircle 4s linear;
+    }
+    .outerCircle {
+        background-color: transparent;
+        border: 8px solid #EE0979;
+        opacity: .9;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-radius: 100px;
+        width: 103px;
+        height: 103px;
+        margin: 0 auto;
+        -moz-animation: spinPulse 3s infinite ease-in-out;
+        -webkit-animation: spinPulse 3s infinite ease-in-out;
+    }
+    .innerCircle {
+        background-color: transparent;
+        border: 5px solid #c1bbbb;
+        opacity: .9;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-radius: 100px;
+        top: -110px;
+        width: 92px;
+        height: 92px;
+        margin: 0 auto;
+        position: relative;
+        -moz-animation: spinoffPulse 1s infinite linear;
+        -webkit-animation: spinoffPulse 1s infinite linear;
+
+    }
+
+    @-moz-keyframes spinPulse {
+        0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #bdd73c;}
+        50% { -moz-transform:rotate(145deg); opacity:1; }
+        100% { -moz-transform:rotate(-320deg); opacity:0; }
+    }
+    @-moz-keyframes spinoffPulse {
+        0% { -moz-transform:rotate(0deg); }
+        100% { -moz-transform:rotate(360deg);  }
+    }
+    @-webkit-keyframes spinPulse {
+        0% { -webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #bdd73c; }
+        50% { -webkit-transform:rotate(145deg); opacity:1;}
+        100% { -webkit-transform:rotate(-320deg); opacity:0; }
+    }
+    @-webkit-keyframes spinoffPulse {
+        0% { -webkit-transform:rotate(0deg); }
+        100% { -webkit-transform:rotate(360deg); }
+    }
+    @-moz-keyframes rotatecircle {
+        0% { -moz-transform:rotate(0deg); }
+        100% { -moz-transform:rotate(-360deg); }
+    }
+
+    @-webkit-keyframes rotatecircle {
+        0% { -webkit-transform:rotate(0deg); }
+        100% { -webkit-transform:rotate(-360deg); }
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- nav -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" id="logo"  width="300px" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link hvr-overline-from-center" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-overline-from-center" href="index.html">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-overline-from-center" href="index.html">PERGUNTAS FREQUENTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-overline-from-center" href="index.html">PORQUE ESCOLHER A LIMO PARTY?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-overline-from-center" href="index.html">GALERIA</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#eventos">EVENTOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- /nav -->
+
+<div class="text-h3 texto text-center">
+    <h4 style="color:#ee0979; font-family: Monotype Corsiva;"></h4>
+</div>
+
+    <!-- about --><!--
+    <div class="about pt-5" id="about">
+	<div class="main-about">
+        <div class="container">
+            <div class="text-h3 text-center">
+                <h3 style="color:#ee0979; font-family: Monotype Corsiva; font-size: 60px;">Nossos Eventos</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F319682701998761&width=500" width="500" height="700" style="border:2px solid #ee0979;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col-md-6 ">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F318459005454464&width=500" width="500" height="700" style="border:2px solid #ee0979;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>-->
+
+<!-- clients-->
+<div class="body">
+    <div class="clients py-5" id="#eventos">
+        <div class="container">
+            <div class="text-h3 texto text-center">
+                <h3 style="color:#ee0979; font-family: Monotype Corsiva; margin-top: 50px; font-size: 60px;">Nossos Eventos</h3>
+            </div>
+
+            <div id="carregando">
+              <div class="outerCircle"></div>
+              <div class="innerCircle"></div>
+              <div class="icon"></div>
+          </div>
+
+          <div class="wmuSlider example1 animated wow slideInUp" data-wow-delay="">
+            <div class="wmuSliderWrapper">
+                <article style="position: absolute; width: 100%; opacity: 0;">
+                    <div class="banner-wrap">
+                        <div class="row">
+                            <div class="col-md-6 client-grids">
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F319682701998761&width=500" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                            <div class="col-md-6 client-grids">
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F318459005454464&width=500" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article style="position: absolute; width: 100%; opacity: 0;">
+                    <div class="banner-wrap">
+                        <div class="row">
+                           <div class="col-md-6 client-grids">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fvideos%2F385773448851342%2F&show_text=1&width=500" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" style="color: white !important;" allow="encrypted-media" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="col-md-6 client-grids">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F317081005592264&width=500" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" color="white"  allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="position: absolute; width: 100%; opacity: 0;">
+                <div class="banner-wrap">
+                    <div class="row">
+                        <div class="col-md-6 client-grids">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F314282029205495&width=500" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                        <div class="col-md-6 client-grids">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fvideos%2F390099531746119%2F&show_text=1&width=500" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="position: absolute; width: 100%; opacity: 0;">
+                <div class="banner-wrap">
+                    <div class="row">
+                        <div class="col-md-6 client-grids">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F312233449410353&width=550" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                        <div class="col-md-6 client-grids">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FLIMOPARTYRIO%2Fposts%2F312021562764875&width=550" width="100%" height="500" style="border:2px solid #ee0979;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</div>
+</div>
+<!--//clients-->
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="w3ls-footer-grids pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 w3l-footer my-md-0 my-4 text-center">
+                  <h2><a class="navbar-brand" href="index.html">LIMO PARTY</a></h2>
+              </div>
+
+              <div class="col-md-3 w3l-footer agileinfo_social_icons">
+                <h3 class="mb-sm-3 mb-2" style="color: #403D3D;">Redes Sociais</h3>
+                <ul class="agileits_social_list">
+                    <li>
+                        <a href="https://pt-br.facebook.com/LIMOPARTYRIO/" target="_blank" class="w3_agile_facebook">
+                            <i style="color: black;" class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/limopartyrio/" target="_blank" style="margin-left: 20px;" class="w3_agile_dribble">
+                            <i style="color: black;" class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 w3l-footer content-right">
+                <h3 class="mb-sm-3 mb-2" style="color: #403D3D;">Endereço</h3>
+
+                <div class="add-info">
+                    <p><span class="contact-right-icons"><i class="fas fa-map-marker"></i></span> Avenida Santa Cruz, nº 3035 - RJ</p>
+                </div>
+                <div class="add-info">
+                    <p><span class="contact-right-icons"><i class="fas fa-phone"></i></span> (21) 96436-1883</p>
+                </div>
+                <div class="add-info">
+                    <p><span class="contact-right-icons"><i class="fab fa-whatsapp"></i></span> (21) 97474-9484</p>
+                </div>  
+                <!--
+                <div class="add-info">
+                    <p><span class="contact-right-icons"><i class="fas fa-envelope"></i></span> <a href="mailto:info@example.com">info@example.com</a></p>
+                </div>-->
+            </div>
+
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0020252536897!2d-43.45409558456573!3d-22.876383585027426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdf8430602709%3A0x73ba808551847105!2sAv.+de+Santa+Cruz%2C+3035+-+Padre+Miguel%2C+Rio+de+Janeiro+-+RJ%2C+21810-006!5e0!3m2!1spt-BR!2sbr!4v1548955917188" width="100%" height="300" frameborder="0" style="border:2px solid #EE0979" allowfullscreen></iframe>
+        <br><br>
+        <div class="col-md-12 w3l-footer content-right">
+         <div class="add-info" align="center">
+            <p><span style="font-size: 12px;">#festaRiodeJaneiro #LimoRosa #limousineRiodeJaneiro #debutantes #15 anos #festasinfantis #infantil #festa #comemoração #limousineRosaRiodeJaneiro #eventosRiodeJaneiro #eventos #limousine #diversão #criançada #luxo #limopartyrio</span></p>
+        </div>
+    </div>
+
+    <div class="row border-top mt-4 pt-lg-4 pt-3 text-lg-left text-center">
+        <p class="col-lg-8 copy-right-grids mt-lg-1">Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Todos direitos reservados |
+            <a>LIMO PARTY</a>
+        </p> 
+    </div>
+</div>
+</div>
+</footer>
+<!-- //footer -->
+
+<!-- js -->
+<script src="js/jquery.min.v3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- //js -->
+
+<script src="js/easy-responsive-tabs.js"></script>
+
+<!-- clients js file-->
+<script src="js/jquery.wmuSlider.js"></script>
+<script>
+    $('.example1').wmuSlider();
+</script>
+<!-- //clients js file -->
+<!-- js for portfolio  -->
+<script src="js/jquery.chocolat.js "></script>
+<!--light-box-files -->
+<script>
+    $(function () {
+        $('.portfolio-grids a').Chocolat();
+    });
+</script>
+
+<script src="js/move-top.js"></script>
+<script src="js/easing.js"></script>
+<script>
+    setTimeout(function() {
+       $('#carregando').fadeOut('fast');
+   }, 3500);
+
+
+    jQuery(document).ready(function ($) {
+
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+</script>
+
+</body>
+
+</html>
